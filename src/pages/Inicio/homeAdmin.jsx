@@ -33,7 +33,7 @@ const HomeAdmin = () => {
     const handleRoleUpdate = async () => {
         try {
             await axios.patch(
-                `http://localhost:3000/api/users/users/${user._id}`,
+                `https://backendweb-pzlb.onrender.com/api/users/users/${user._id}`,
                 { role: newRole },
                 {
                     headers: {
