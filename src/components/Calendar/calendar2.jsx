@@ -48,7 +48,7 @@ const Calendar2 = () => {
 
         try {
             const response = await axios.post(
-                `http://localhost:3000/api/citas/book/${selectedEvent._id}`,
+                `https://backendweb-pzlb.onrender.com/api/citas/book/${selectedEvent._id}`,
                 {},
                 {
                     headers: {
