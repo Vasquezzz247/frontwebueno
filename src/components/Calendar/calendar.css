@@ -1,0 +1,128 @@
+/* General Calendar Styles */
+.rbc-calendar {
+    background-color: #f9fafb;
+    /* Fondo suave */
+    border: 1px solid #e5e7eb;
+    /* Borde ligero */
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+}
+
+.rbc-toolbar {
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rbc-toolbar button {
+    background-color: #84AFF5;
+    /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.rbc-toolbar button:hover {
+    background-color: #2563eb;
+    /* Azul más oscuro al pasar el mouse */
+}
+
+.rbc-time-view {
+    border-radius: 0 0 8px 8px;
+}
+
+.rbc-time-header {
+    background-color: #f3f4f6;
+    /* Fondo más claro */
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.rbc-time-header-cell {
+    font-weight: bold;
+    color: #374151;
+}
+
+/* Styling for Events */
+.rbc-event {
+    background-color: #93c5fd;
+    /* Azul suave */
+    border: 1px solid #84AFF5;
+    /* Borde azul */
+    border-radius: 4px;
+    color: #1e3a8a;
+    /* Azul oscuro para texto */
+    padding: 4px;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.rbc-event:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal Styles */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.modal-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.modal-container button {
+    background-color: #84AFF5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.modal-container button:hover {
+    background-color: #84AFF5;
+}
+
+.modal-container button.cancel-button {
+    background-color: #f3f4f6;
+    color: #374151;
+}
+
+.modal-container button.cancel-button:hover {
+    background-color: #e5e7eb;
+}
