@@ -56,7 +56,7 @@ const Home = () => {
                             {files.map((file, index) => (
                                 <div key={index} className="flex flex-col items-center">
                                     <img
-                                        src={`http://localhost:3000${file.path}`}
+                                        src={`https://backendweb-pzlb.onrender.com${file.path}`}
                                         alt={file.name}
                                         className="rounded shadow"
                                     />
